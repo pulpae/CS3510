@@ -47,4 +47,21 @@ revHead xs = head (reverse xs)
 -- (1)
 -- (a) Char; Tuple (Char, Char, Char); List of tuples; Tuple (Bool, Int);
 -- Function.
--- Function
+
+second xs = head (tail xs)
+-- [a] -> a || type variable (any type)
+
+swap(x,y) = (y,x)
+-- (b,a) -> (a,b) || tuple
+
+pair x y = (x,y)
+-- a->b->(a,b) || tuple
+
+doublee x = x*2
+-- Num a => a -> a || Num (as per the class constraint)
+
+palindrome xs = reverse xs == xs
+-- Eq a => [a] -> Bool || Boolean
+
+twice f x = f (f x)
+-- (t->t)->t->t || type variable (function f might return a specific type)
