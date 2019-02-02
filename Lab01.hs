@@ -1,10 +1,12 @@
+-- LAB O1
+
 -- (1) Defining simple functions:
 double x = x + x
 quadruple x = double (double x)
 factorial n = product [1..n]
 average ns = sum ns `div` length ns
 
--- (2) Diving integer by the length of a list:
+-- (2) Dividing an integer by the length of a list:
 listDivInt = a `div` length xs
        where
           a = 10
@@ -39,6 +41,10 @@ qsortRev (x:xs) =
 
 selLast xs = xs !! (length xs-1)
 
-revHead xs = head b
-  where
-    b = reverse xs
+revHead xs = head (reverse xs)
+
+-- LAB 02
+-- (1)
+-- (a) Char; Tuple (Char, Char, Char); List of tuples; Tuple (Bool, Int);
+-- Function.
+-- Function
