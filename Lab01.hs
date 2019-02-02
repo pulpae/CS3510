@@ -71,3 +71,10 @@ twice f x = f (f x)
 
 -- (2) [[False, True], ['0','1']] || A list can only hold values of the same type.
 -- This would be [Bool, Char]. A tuple should be used instead (Bool, Char).
+
+--(3)
+
+doubleAll xs = map (*2) xs
+isEven n = n `mod` 2 == 0
+
+halve xs = take (length xs `div` 2) xs
