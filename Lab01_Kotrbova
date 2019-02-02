@@ -1,0 +1,36 @@
+1. III (2-8)
+
+--> basic operations
+2+3*4
+(2+3)*4
+sqrt (3^2 + 4^2)
+
+--> list methods
+
+-> head || select 1st element of a list
+head [1,2,3,4,5]
+
+-> tail || remove 1st element
+tail [1,2,3,4,5]
+
+-> !! n || select nth element
+[1,2,3,4,5] !! 2
+
+-> take || select first n elements
+take 3 [1,2,3,4,5]
+
+-> drop n || remove first n elements
+drop 3 [1,2,3,4,5]
+
+-> length || length [1,2,3]
+-> sum || sum [1,2,3]
+-> product || product [1,2,3]
+-> append || [x] ++ [y]
+-> reverse || reverse [1,2,3]
+
+--> defining some functions
+
+-> double x = x + x
+-> quadruple x = double (double x)
+-> factorial n = product [1..n]
+-> average ns = sum ns `div` length ns
