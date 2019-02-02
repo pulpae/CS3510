@@ -44,9 +44,12 @@ selLast xs = xs !! (length xs-1)
 revHead xs = head (reverse xs)
 
 -- LAB 02
--- (1)
--- (a) Char; Tuple (Char, Char, Char); List of tuples; Tuple (Bool, Int);
--- Function.
+-- (1) (a)
+-- ['a', 'b'] || Char [Char, Char]
+-- ('a', 'b') || Char (Char, Char)
+-- [(False, '0'), (True, '1')] || Tuple [(Bool, Char), (Bool, Char)]
+-- ([False, True], ['0', '1']) || Tuple (Bool, Char)
+-- [tail, init, reverse] || function
 
 second xs = head (tail xs)
 -- [a] -> a || type variable (any type)
@@ -65,3 +68,6 @@ palindrome xs = reverse xs == xs
 
 twice f x = f (f x)
 -- (t->t)->t->t || type variable (function f might return a specific type)
+
+-- (2) [[False, True], ['0','1']] || A list can only hold values of the same type.
+-- This would be [Bool, Char]. A tuple should be used instead (Bool, Char).
