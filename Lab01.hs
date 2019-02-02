@@ -16,7 +16,7 @@ listDivInt = a `div` length xs
 -- function wrapped in wrong symbols.
 -- function name must begin by a lowercase letter.
 
--- (3) Fixing sorting algorithm:
+-- (3) Sorting:
 qsort [] = []
 qsort (x:xs) =
   qsort smaller ++ [x] ++ qsort larger
@@ -44,7 +44,7 @@ selLast xs = xs !! (length xs-1)
 revHead xs = head (reverse xs)
 
 -- LAB 02
--- (1) (a)
+-- (1) (a) Types
 -- ['a', 'b'] || Char [Char, Char]
 -- ('a', 'b') || Char (Char, Char)
 -- [(False, '0'), (True, '1')] || Tuple [(Bool, Char), (Bool, Char)]
@@ -72,9 +72,10 @@ twice f x = f (f x)
 -- (2) [[False, True], ['0','1']] || A list can only hold values of the same type.
 -- This would be [Bool, Char]. A tuple should be used instead (Bool, Char).
 
---(3)
+--(3) Defining functions
 
 doubleAll xs = map (*2) xs
+
 isEven n = n `mod` 2 == 0
 
 halve xs = take (length xs `div` 2) xs
