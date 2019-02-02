@@ -67,7 +67,7 @@ palindrome xs = reverse xs == xs
 -- Eq a => [a] -> Bool || Boolean
 
 twice f x = f (f x)
--- (t->t)->t->t || type variable (function f might return a specific type)
+-- (t->t)->t->t || type variable (function f might have a specific type).
 
 -- (2) [[False, True], ['0','1']] || A list can only hold values of the same type.
 -- This would be [Bool, Char]. A tuple should be used instead (Bool, Char).
