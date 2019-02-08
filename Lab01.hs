@@ -78,4 +78,8 @@ doubleAll xs = map (*2) xs
 
 isEven n = n `mod` 2 == 0
 
-halve xs = take (length xs `div` 2) xs
+
+
+halve xs | isEven(length xs) = (take n xs, drop n xs)
+         | otherwise = ([],[])  
+         where n = (length xs) `div` 2
